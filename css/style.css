@@ -103,7 +103,8 @@ header .nav-bar li a:hover{
 
 .contenido .tituloBox{
     position: relative;
-    max-width: 600px;text-align: center;
+    max-width: 600px;
+    text-align: center;
 }
 
 .contenido .tituloBox h2{
@@ -116,10 +117,10 @@ header .nav-bar li a:hover{
 .contenido .tituloBox h2 span{
     background: darkorange;
     color: rgb(255, 255, 255);
-    padding: 0 20px;
+    padding: 0 30px;
     font-family: "Caveat", cursive;
     font-size: 0.5em;
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 20px;
 }
 
@@ -160,8 +161,6 @@ header .nav-bar li a:hover{
     left: 800px;
     margin-bottom: 0px;
     padding: 0px 300px 0px;
- 
-
 }
 
 .copyright p{
@@ -171,7 +170,7 @@ header .nav-bar li a:hover{
     margin: 20px;
 }
 
-/* Enlaces externos de index.html  */
+/* Enlaces externos */
 
 .redesSociales{
     position: absolute;
@@ -197,4 +196,270 @@ header .nav-bar li a:hover{
 .redesSociales li:hover a{
     color: darkorange;
     transition: 0.5s;
+}
+
+/* Aquí empieza contacto.html */
+
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario{
+    background: darkorange;
+    margin-top: 100px;
+}
+
+h1 .h1form{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    text-shadow: 4px 0px 2px black;
+    
+}
+.icon{
+    position: relative;
+    top: 18px;
+    width: 50px;
+    height: 50px;    
+}
+
+input[type="text"], input[type="password"]{
+    text-align: center;
+    color: darkorange;
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    text-shadow: 1px 0px 2px black;
+}
+
+.input-contenedor{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  
+}
+.button{
+    margin-top: 20px;
+    border: none;
+    width: 100%;
+    font-size: 30px;
+    color: darkorange;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer; 
+    text-shadow: 1px 0px 2px black;
+}
+
+.button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: 4px 0px 2px black;
+    font-weight: 600;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600px;
+}
+.link:hover{
+    color: orangered;
+}
+
+.formulario .contenedor .volver {
+    text-decoration: none;
+    background: white;
+    color: darkorange;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    letter-spacing: 5px;
+    transition: 0.5s;
+    text-shadow: 1px 0px 2px black;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.formulario .contenedor .volver:hover{
+    background: orangered;
+    color: white;
+    transition: 0.5s;
+    text-shadow: 0px 0px 0px black;
+}
+
+@media(min-width: 768px){
+    .formulario{
+        width: 500px;
+        margin: auto;
+        border-radius: 2%;
+        padding: 20px;
+    }
+}
+
+/* Aquí empiezan los proyectos */
+
+.h1proy{
+    position: relative;
+    text-align: center;
+    color: darkorange;
+    font-size: 48px;
+    text-shadow: 0 1px 2px #000;
+}
+
+.contenedor-galeria{
+    background-color: white;
+    width: 1000px;
+    height: 620px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
+}
+.contenedor-galeria li{
+    position: relative;
+    display: block;
+    width: 250px;
+    float: left;
+    box-shadow: 0 0 25px 5px rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
+.contenedor-galeria ul:hover li{
+    width: 82px;
+    filter: brightness(50%);
+}
+.contenedor-galeria ul li:hover{
+    width: 750px;
+    filter: brightness(100%);
+}
+
+.contenedor-galeria li img{
+    display: block;
+    width: 100%;
+    height: 500px;
+    transition: all 0.5s ease;
+    filter: brightness(100%);
+}
+
+.titulo-imagen{
+    background: rgba(255,255,255,0.8);
+    animation: cambia-color 10s linear infinite;
+}
+
+@keyframes cambia-color{
+    0%{
+        background-position: 0%, 50%;
+    }
+    50%{
+        background-position: 100%, 50%;
+    }
+    100%{
+        background-position: 0%, 100%;
+    }
+}
+
+.titulo-imagen a{
+    display: block;
+    color: darkorange;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    text-shadow: 0 1px 2px #000;
+    transition: all 0.5s ease;
+}
+
+/* Quien soy */
+
+.quiensoy {
+    margin: 30px;    
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-content: center;   
+}
+
+.card {
+
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    font-size: 2rem;
+    text-shadow: 1px 0px 2px black;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    line-height: 40px;
+    padding: 10px;
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    box-shadow: 0px 5px 10px #000;
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card .back h3 {
+    text-shadow: 1px 0px 2px black;
+    font-size: 3rem;
+    margin: 30px;
+    letter-spacing: 3px;
+}
+
+.card .back p {
+    letter-spacing: 3px;
+    margin-bottom: 40%;
+    font-size: 2rem;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(0deg);
 }
